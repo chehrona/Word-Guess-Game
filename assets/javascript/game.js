@@ -41,7 +41,7 @@ function wordDisplayer(event) {
         }
     }
     dashes = dashesArr.join(" ");
-    if (guessNumber <= 0) {
+    if ((guessNumber <= 0) && dashes.includes("_")) {
         setTimeout(function () {
             alert("You ran out of guesses");
         }, 90)
@@ -51,7 +51,6 @@ function wordDisplayer(event) {
         winScore++;
         isGameOver = true;
     }
-    console.log("here1");
     winCount.innerHTML = "Wins<br>" + winScore;
     currentWord.innerHTML = "Current Word<br>" + dashes;
     guessRemaining.innerHTML = "Number of Guesses Remaining<br>" + guessNumber;

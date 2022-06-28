@@ -1,12 +1,26 @@
+//Array of all the words that need to be guessed
 let words = ["meniscus", "molecule", "data", "experiment", "atom", "energy", "evolution", "matter", "microscope", "element", "voltmeter", "resistor", "flask", "virus",
 "bacteria", "organism", "protein", "glucose", "thermometer"];
+
+//Index of the first word in the words array
 let wordIndex = 0;
+
+//Number of attempts a user gets. It will decrement as the letters are pressed. If the letters are pressed twice, it does not go down.
 let guessNumber = 13;
+
+//Keeps track of all the times a word was guessed within allowed attempts.
 let winScore = 0;
+
+//Generates a string of "_" corresponding to the length of each word
 let dashes = "_ ".repeat(words[wordIndex].length);
+
+//Determines the end state of the game
 let isGameOver = false;
+
+//Stores the letters that have been guessed so far
 let lettersArr = [];
 
+//
 let instructionsPrint = document.getElementById("instructions");
 let guessRemaining = document.getElementById("guess");
 let currentWord = document.getElementById("word");

@@ -55,7 +55,7 @@ function wordDisplayer(event) {
     winCount.innerHTML = "Wins<br>" + winScore;
     currentWord.innerHTML = "Current Word<br>" + dashes;
     guessRemaining.innerHTML = "Number of Guesses Remaining<br>" + guessNumber;
-    lettersGuessed.innerHTML = "Letter Already Guessed<br>" + lettersArr.join(", ");
+    lettersGuessed.innerHTML = "Letters Already Guessed<br>" + lettersArr.join(", ");
 
     if (isGameOver) {
         console.log("here2");

@@ -1,0 +1,36 @@
+body {
+    background-image: url("../images/background.jpeg");
+    background-size: 100%;
+}
+
+.instructions {
+    background-color: #2b776f;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Times New Roman", serif;
+    margin-top: 2%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 3%;
+    padding: 1%;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #92c5ed;
+}
+
+#innerBorder {
+    border-radius: 20px;
+    background-color: #92c5ed;
+    padding: 2%;
+    border: 2px solid #0c263d;
+}
+
+.box {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #92c5ed;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    line-height: 40px;
+    border: 2px solid #0c263d;
+}

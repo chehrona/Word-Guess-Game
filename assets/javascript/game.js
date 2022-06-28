@@ -1,6 +1,6 @@
 let words = ["meniscus", "molecule", "data", "experiment", "atom", "energy", "evolution", "matter", "microscope"];
 let wordIndex = 0;
-let guessNumber = 13;
+let guessNumber = 10;
 let winScore = 0;
 let dashes = "_ ".repeat(words[wordIndex].length);
 let isGameOver = false;
@@ -80,7 +80,7 @@ function replay() {
     if (yesOrNo) {
         wordIndex++;
         isGameOver = false;
-        guessNumber = 13;
+        guessNumber = 10;
         dashes = "_ ".repeat(words[wordIndex].length);
         lettersArr = [];
         winCount.innerHTML = "Wins<br>" + winScore;

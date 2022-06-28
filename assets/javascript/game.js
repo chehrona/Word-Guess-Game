@@ -67,7 +67,7 @@ function wordDisplayer(event) {
 
 
 
-let invalidChar = ["BACKSPACE", "ALT", "META", "ESCAPE", "ARROWUP", "ARROWDOWN", "ARROWRIGHT", "ARROWLEFT", "SHIFT", "CAPSLOCK", "ENTER"];
+let invalidChar = ["BACKSPACE", "ALT", "META", "ESCAPE", "ARROWUP", "ARROWDOWN", "ARROWRIGHT", "ARROWLEFT", "SHIFT", "CAPSLOCK", "ENTER", "CONTROL"];
 function inputIsLetter(char) {
   if ((!/^[a-zA-Z]*$/g.test(char)) || (invalidChar.includes(char.toUpperCase()))) {
       alert("Invalid character. Please use only letters");

@@ -20,7 +20,6 @@ let isGameOver = false;
 //Stores the letters that have been guessed so far
 let lettersArr = [];
 
-//
 let instructionsPrint = document.getElementById("instructions");
 let guessRemaining = document.getElementById("guess");
 let currentWord = document.getElementById("word");
